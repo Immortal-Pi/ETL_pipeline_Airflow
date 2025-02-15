@@ -42,6 +42,9 @@ The project leverages Docker to run Airflow and Postgres as services, ensuring a
 ![image6](https://github.com/Immortal-Pi/ETL_pipeline_Airflow/blob/main/screenshots/6.png)
 ![image7](https://github.com/Immortal-Pi/ETL_pipeline_Airflow/blob/main/screenshots/7.png)
 
+## Astro cloud 
+![image9](https://github.com/Immortal-Pi/ETL_pipeline_Airflow/blob/main/screenshots/9.png)
+
 ## Tech Stack 
 
 - **Programming Language**: Python
@@ -59,5 +62,7 @@ Extract (E): Data is fetched from Alpha Vantage API using Airflow's SimpleHttpOp
 Transform (T): The extracted JSON data is processed in a transformation task using Airflow’s TaskFlow API, ensuring the data is in the correct format for the database (e.g., extracting relevant fields like title, close price, market name, date etc).
 
 Load (L): The transformed data is loaded into a PostgreSQL database using Airflow's PostgresHook. If the target table doesn't exist, it's created automatically within the DAG.
+
+As a part of cloud migration, this app was deployed to astronomer cloud and postgres SQL database was hosted on AWS RDS 
 
 The pipeline is orchestrated using an Airflow DAG, which manages task dependencies and ensures the process runs sequentially. Docker is used to run both Airflow and PostgreSQL in isolated containers, ensuring a reproducible environment with data persistence.

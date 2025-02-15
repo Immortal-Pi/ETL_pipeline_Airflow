@@ -41,7 +41,7 @@ with DAG(
         postgres_hook.run(create_table_query)
 
     # step 2: extract the bitcoin data from API
-    # url='https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol=BTC&market=USD&apikey=DO0FD78JBEJ4JTD2'
+   
 
     extract_btc=SimpleHttpOperator(
         task_id='extract_btc',
