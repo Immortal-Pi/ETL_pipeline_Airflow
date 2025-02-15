@@ -18,7 +18,7 @@ with DAG(
     @task
     def create_table():
         # step 1: create a postgres table if it doesnt exits
-        postgres_hook=PostgresHook(postgres_conn_id='my_postgres_connection')
+        postgres_hook=PostgresHook(postgres_conn_id='aws_postgres_conn_id')
 
         # SQL query to create the table 
         create_table_query=""" 
@@ -80,7 +80,7 @@ with DAG(
     # step 4: load the data into postgres SQL
     @task 
     def load_data_postgres(data):
-        postgreshook=PostgresHook(postgres_conn_id='my_postgres_connection')
+        postgreshook=PostgresHook(postgres_conn_id='aws_postgres_conn_id')
 
         # swfine SQL insert query 
         insert_query=""" 
