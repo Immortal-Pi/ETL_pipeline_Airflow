@@ -26,13 +26,21 @@ The project leverages Docker to run Airflow and Postgres as services, ensuring a
 ## Apache Airflow 
 
 ### ETL pipeline
-
+![image1](https://github.com/Immortal-Pi/ETL_pipeline_Airflow/blob/main/screenshots/1.png)
 ### logs 
-
+![image2](https://github.com/Immortal-Pi/ETL_pipeline_Airflow/blob/main/screenshots/2.png)
+### extracted data 
+![image3](https://github.com/Immortal-Pi/ETL_pipeline_Airflow/blob/main/screenshots/3.png)
 ## DB Viewer 
-
+![image8](https://github.com/Immortal-Pi/ETL_pipeline_Airflow/blob/main/screenshots/8.png)
 ## Streamlit
+![image4](https://github.com/Immortal-Pi/ETL_pipeline_Airflow/blob/main/screenshots/4.png)
 
+![image5](https://github.com/Immortal-Pi/ETL_pipeline_Airflow/blob/main/screenshots/5.png)
+
+## Dockers
+![image6](https://github.com/Immortal-Pi/ETL_pipeline_Airflow/blob/main/screenshots/6.png)
+![image7](https://github.com/Immortal-Pi/ETL_pipeline_Airflow/blob/main/screenshots/7.png)
 
 ## Tech Stack 
 
